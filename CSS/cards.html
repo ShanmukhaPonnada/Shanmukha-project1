@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: cards ::</title>
+    <style>
+     .card{
+         border:2px solid lightgray;
+         width: 18rem;
+         text-align: center;
+         border-radius: 5px;
+         margin-bottom: 10px;
+     }
+
+      .card img {
+          width: 100%;
+      }
+      button {
+          padding:10px;
+          width: 30%;
+          font-size: 20px;
+          background-color: rgb(51, 47, 248);
+          color: rgb(243, 237, 237);
+          border-radius: 5px;
+          margin-bottom: 10px;
+      }
+
+      .main{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around ;
+      }
+
+
+      @media only  screen and (max-width:600px){
+          .card {
+              width: 100%;
+          }
+
+          button{
+              background-color: azure;
+              color: black;
+          }
+      }
+
+      @media only  screen and (min-width:768px){
+          .card {
+              width: 45%;
+          }
+
+          button{
+              background-color: rgb(51, 204, 204);
+              color: black;
+          }
+      }
+
+      @media only  screen and (min-width:992px){
+          .card {  
+              width: 24%;
+          }
+
+          button{
+              background-color: rgb(255, 240, 242);
+              color: black;
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="main">
+<!-- Parent division -->
+
+        <div class="card">
+            <img src="./download.jpg" alt="">
+            <h3>Iphone11</h3>
+            <h4>90,000</h4>
+            <h4>30% offer</h4>
+            <button type="submit">Buy</button>
+        </div>
+
+
+        <div class="card">
+            <img src="./download.jpg" alt="">
+            <h3>Iphone11</h3>
+            <h4>90,000</h4>
+            <h4>30% offer</h4>
+            <button type="submit">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="./download.jpg" alt="">
+            <h3>Iphone11</h3>
+            <h4>90,000</h4>
+            <h4>30% offer</h4>
+            <button type="submit">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="./download.jpg" alt="">
+            <h3>Iphone11</h3>
+            <h4>90,000</h4>
+            <h4>30% offer</h4>
+            <button type="submit">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="./download.jpg" alt="">
+            <h3>Iphone11</h3>
+            <h4>90,000</h4>
+            <h4>30% offer</h4>
+            <button type="submit">Buy</button>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
