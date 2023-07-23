@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> :: Selectors :: </title>
+    <style>
+        * {
+            background-color: lightgray
+        }
+
+        h1 {
+           
+            font-size: 26px;
+            color:#fff;
+            background-color: #48C298;
+            margin-top: 40px;
+        }
+
+        ul, marquee {
+           
+            color: #fff;
+            background-color: #000;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        ul li {
+            padding: 10px 40px;
+            color: #fff;
+            background-color: #000;
+            font-size: 25px;
+            list-style: none;
+        }
+         
+        .page-header{
+            display: flex;
+            flex-wrap: wrap;
+            color:#fff;
+            background-color: #48C298;
+            justify-content: space-between;
+        }
+
+        #login {
+            float:right;
+            margin-right: 0px;
+        }
+         div p{
+             background-color: yellow;
+         }
+         div>p{
+             background-color: red;
+         }
+         div + p{
+             background-color: blue;
+             color: white;
+         }
+         div ~ p{
+             background-color: chartreuse;
+         }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <img src="./logo.jpg" alt="" height="100px" width="100px">
+        <h1>Chalapathi Institute Of Engineering & Technology</h1>
+     <img src="./logo1.png" alt="" height="100px" width="100px">
+    </div>
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>About US</li>
+        <li><a href="">Register</a></li>
+    </ul>
+    <button type="submit" id="login">Login</button>
+</nav>
+<marquee behavior="" direction="">Click for Registration </marquee>
+    <div>
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+        <section>
+            <p>Paragraph3</p>
+        </section>
+        <p>Paragraph4</p>
+        <p>Paragraph5</p>
+        <div>
+            <p>Paragraph6</p>
+           
+        </div>
+        <p>Paragraph7</p>
+        <p>paragraph8</p>
+    </div>
+    <p>Paragrap9</p>
+    <p>10</p>
+</body>
+</html>
