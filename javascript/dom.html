@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid lightgray;
+            width: 18rem ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+   <h1>welcome</h1>
+    </div>
+   <script>
+
+      fetch("data.json").then(
+          response  => response.json()
+      ).then(
+          data=> 
+        //   console.log(data)
+   details(data)
+
+      )
+
+
+      var main=document.querySelector(".main")
+function details(info){
+            var heading=document.createElement('h1')
+      heading.textContent=info.name;
+      main.appendChild(heading);
+      }
+
+      
+   </script>
+</body>
+</html>
